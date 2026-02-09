@@ -186,10 +186,10 @@ export default async function createMiniPDP(cartItem, onUpdate, onClose) {
         src: product.images?.[0]?.url || freshCartItem.image,
         alt: product.images?.[0]?.label || product.name,
         width: 400,
-        height: 400,
+        height: 380,
         imageParams: {
           width: 400,
-          height: 400,
+          height: 380,
         },
       })($gallery),
 

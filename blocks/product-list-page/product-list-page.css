@@ -121,3 +121,16 @@
         justify-content: flex-end;
     }
 }
+
+/* Product Discovery product images: force the rendered image size */
+.product-discovery-product-list .dropin-product-item-card__image img {
+  width: 380px;
+  height: auto;
+  max-width: none;
+}
+
+/* Optional: center image in its slot */
+.product-discovery-product-list .dropin-product-item-card__image {
+  display: flex;
+  justify-content: center;
+}

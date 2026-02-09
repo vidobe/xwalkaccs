@@ -499,3 +499,16 @@ body.columns main > .section:empty {
 main[hidden] {
   display: none !important;
 }
+
+/* Product Discovery PLP: force product card image size */
+.product-discovery-product-list .dropin-product-item-card__image img {
+  width: 380px;
+  height: auto;
+  max-width: none;
+}
+
+/* keep the image centered in its cell */
+.product-discovery-product-list .dropin-product-item-card__image {
+  display: flex;
+  justify-content: center;
+}

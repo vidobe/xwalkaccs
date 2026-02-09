@@ -61,7 +61,7 @@ describe('AEM Assets enabled', { tags: ["@skipSaas", "@skipPaas"] }, () => {
         expectAemAssetsImage(image.src, {
           ...expectedOptions,
           width: 400,
-          height: 450,
+          height: 380,
         });
 
         for (const { url, screenWidth, density } of image.srcsetEntries) {
@@ -71,7 +71,7 @@ describe('AEM Assets enabled', { tags: ["@skipSaas", "@skipPaas"] }, () => {
           expectAemAssetsImage(url, {
             ...expectedOptions,
             width: (400 * screenWidth) / 1920,
-            height: 450,
+            height: 380,
           });
         }
       }
@@ -85,7 +85,7 @@ describe('AEM Assets enabled', { tags: ["@skipSaas", "@skipPaas"] }, () => {
         expectAemAssetsImage(image.src, {
           ...expectedOptions,
           width: 400,
-          height: 450,
+          height: 380,
         });
 
         for (const { url, screenWidth, density } of image.srcsetEntries) {
@@ -95,7 +95,7 @@ describe('AEM Assets enabled', { tags: ["@skipSaas", "@skipPaas"] }, () => {
           expectAemAssetsImage(url, {
             ...expectedOptions,
             width: (400 * screenWidth) / 1920,
-            height: 450,
+            height: 380,
           });
         }
       }

@@ -140,21 +140,30 @@ export default async function decorate(block) {
     provider.render(SearchResults, {
       routeProduct: (product) => getProductLink(product.urlKey, product.sku),
       slots: {
-        ProductImage: (ctx) => {
-          const { product, defaultImageProps } = ctx;
-          const anchorWrapper = document.createElement('a');
-          anchorWrapper.href = getProductLink(product.urlKey, product.sku);
+ProductImage: (ctx) => {
+  const { product, defaultImageProps } = ctx;
 
-          tryRenderAemAssetsImage(ctx, {
-            alias: product.sku,
-            imageProps: defaultImageProps,
-            wrapper: anchorWrapper,
-            params: {
-              width: defaultImageProps.width,
-              height: defaultImageProps.height,
-            },
-          });
-        },
+  const IMAGE_W = 380;
+  const IMAGE_H = 380;
+
+  const anchorWrapper = document.createElement('a');
+  anchorWrapper.href = getProductLink(product.urlKey, product.sku);
+
+  tryRenderAemAssetsImage(ctx, {
+    alias: product.sku,
+    imageProps: {
+      ...defaultImageProps,
+      width: IMAGE_W,
+      height: IMAGE_H,
+    },
+    wrapper: anchorWrapper,
+    params: {
+      width: IMAGE_W,
+      height: IMAGE_H,
+    },
+  });
+},
+
         ProductActions: (ctx) => {
           const actionsWrapper = document.createElement('div');
           actionsWrapper.className = 'product-discovery-product-actions';
