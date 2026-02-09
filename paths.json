@@ -1,12 +1,12 @@
 {
   "mappings": [
-    "/content/xwalkaccs/:/",
-    "/content/xwalkaccs/configuration:/.helix/config.json",
-    "/content/xwalkaccs/headers:/.helix/headers.json",
-    "/content/xwalkaccs/metadata:/metadata.json",
-    "/content/xwalkaccs.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+    "/content/xwalkaccs2/:/",
+    "/content/xwalkaccs2/configuration:/.helix/config.json",
+    "/content/xwalkaccs2/headers:/.helix/headers.json",
+    "/content/xwalkaccs2/metadata:/metadata.json",
+    "/content/xwalkaccs2.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
   ],
   "includes": [
-    "/content/xwalkaccs/"
+    "/content/xwalkaccs2/"
   ]
 }
