@@ -43,11 +43,11 @@
         },
 
         {
-          "component": "reference",
+          "component": "text",
           "valueType": "string",
           "name": "button",
           "label": "Button link",
-          "multi": false
+          "value": ""
         },
         {
           "component": "text",
