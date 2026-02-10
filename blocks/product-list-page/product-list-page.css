@@ -1,4 +1,3 @@
-
 .block.product-list-page .search__wrapper {
     display: grid;
     margin-block: var(--spacing-small);
@@ -84,8 +83,7 @@
 /* Empty State */
 
 .block.product-list-page.product-list-page--empty .search__wrapper {
-    grid-template-areas:
-        "product-list";
+    grid-template-areas: "product-list";
     grid-template-columns: 1fr;
 }
 
@@ -124,13 +122,13 @@
 
 /* Product Discovery product images: force the rendered image size */
 .product-discovery-product-list .dropin-product-item-card__image img {
-  width: 380px;
-  height: auto;
-  max-width: none;
+    width: 380px;
+    height: auto;
+    max-width: none;
 }
 
 /* Optional: center image in its slot */
 .product-discovery-product-list .dropin-product-item-card__image {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }

@@ -4,7 +4,9 @@
     }
 }
 
-.commerce-account-sidebar-wrapper .commerce-account-sidebar .commerce-account-sidebar-item {
+.commerce-account-sidebar-wrapper
+    .commerce-account-sidebar
+    .commerce-account-sidebar-item {
     display: flex;
     align-items: center;
     padding: var(--spacing-medium);
@@ -14,7 +16,9 @@
     text-decoration: none;
 }
 
-.commerce-account-sidebar-wrapper .commerce-account-sidebar .commerce-account-sidebar-item-active {
+.commerce-account-sidebar-wrapper
+    .commerce-account-sidebar
+    .commerce-account-sidebar-item-active {
     border-color: var(--color-neutral-800);
     background-color: var(--color-neutral-200);
 }

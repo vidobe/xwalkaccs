@@ -190,8 +190,8 @@
 }
 
 .checkout__block
-.cart-cart-summary-list
-.cart-cart-summary-list__footer-divider {
+    .cart-cart-summary-list
+    .cart-cart-summary-list__footer-divider {
     margin: var(--spacing-small) 0;
 }
 
