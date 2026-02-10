@@ -18,14 +18,14 @@ export default function decorate(block) {
   block.appendChild(content);
 
   // Add CTA if provided in UE
-  const ctaText = (config.ctatext || '').trim();
-  const ctaLink = (config.ctalink || '').trim();
+  const ctaText = (config.buttonText || '').trim();
+  const ctaLink = (config.buttonLink || '').trim();
 
   if (ctaText && ctaLink) {
     const cta = document.createElement('a');
     cta.className = 'button primary hero__cta';
-    cta.href = ctaLink;
-    cta.textContent = ctaText;
+    cta.href = buttonLink;
+    cta.textContent = buttonText;
 
     // Put button at end of content
     content.appendChild(cta);

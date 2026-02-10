@@ -418,14 +418,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "ctaText",
+        "name": "buttonText",
         "label": "Button text",
         "value": ""
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "ctaLink",
+        "name": "buttonLink",
         "label": "Button link",
         "multi": false
       }
