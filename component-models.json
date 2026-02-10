@@ -411,9 +411,16 @@
       {
         "component": "richtext",
         "name": "text",
-        "value": "",
         "label": "Text",
+        "value": "",
         "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "button",
+        "label": "Button link",
+        "multi": false
       },
       {
         "component": "text",
@@ -421,13 +428,6 @@
         "name": "buttonText",
         "label": "Button text",
         "value": ""
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "buttonLink",
-        "label": "Button link",
-        "multi": false
       }
     ]
   },
